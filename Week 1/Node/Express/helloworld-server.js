@@ -7,6 +7,7 @@ var port = 3000;
 
 var app = express();
 
+//use of an applevel midle ware
 app.use(function(req, res, next) {
   console.log(req.method+', '+req.url);
   console.log(req.headers);
